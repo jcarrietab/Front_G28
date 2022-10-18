@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funcionesReportes.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  
+  <body>
+    <nav class="bg-gray-800">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <div class="flex items-center">
+            <div class="flex-shrink-0">
+              <img
+                class="h-8 w-8"
+                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                alt="Your Company"
+              />
+            </div>
+            <div class="hidden md:block">
+              <div class="ml-10 flex items-baseline space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a
+                  href="index.html"
+                  class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                  aria-current="page"
+                  >Inicio</a
+                >
+
+                <a
+                  href="categoria.html"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >Categoria</a
+                >
+
+                <a
+                  href="room.html"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >Habitaciones</a
+                >
+
+                <a
+                  href="cliente.html"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >Clientes</a
+                >
+
+                <a
+                  href="mensaje.html"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >Mensajes</a
+                >
+
+                <a
+                  href="reservaciones.html"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >Reservaciones</a
+                >                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <button onclick="getStatus()">Generar Reporte Status</button>
+    <div id="resultado1"></div>
+    <p>
+      <button onclick="getFechas()">Generar Reporte Fechas</button>
+      <div id="resultado2"></div>
+    </p>
+
+    <p>
+      <button onclick="getClientes()">Generar Reporte Clientes</button>
+      <div id="resultado3"></div>
+    </p>    
+  </body>
+</html>

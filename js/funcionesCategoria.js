@@ -20,7 +20,7 @@ function postCategoria() {
       description: $("#description").val(),
     };
     $.ajax({
-      url: "http://129.80.254.55/api/Category/save",
+      url: "http://129.80.254.55:8080/api/Category/save",
       type: "POST",
       datatype: "JSON",
       contentType: "application/json; charset=utf-8",
